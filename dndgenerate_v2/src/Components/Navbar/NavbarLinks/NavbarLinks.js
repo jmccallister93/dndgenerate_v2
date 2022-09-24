@@ -1,14 +1,26 @@
 import React from "react";
-import "./NavbarLinks.scss"
+import "./NavbarLinks.scss";
 
 const NavbarLinks = (props) => {
   return (
     <ul className="navbar__links">
-      <li className="navbar__link-item">Home</li>
-      <li className="navbar__link-item">Create</li>
-      <li className="navbar__link-item">Signup</li>
+      <li>
+        <a className="navbar__links-item" href="#">
+          Home
+        </a>
+      </li>
+      <li>
+        <a className="navbar__links-item" href="#">
+          Create
+        </a>
+      </li>
+      <li>
+        <a className="navbar__links-item" href="#">
+          Signup
+        </a>
+      </li>
     </ul>
   );
 };
 
-export default NavbarLinks
+export default NavbarLinks;

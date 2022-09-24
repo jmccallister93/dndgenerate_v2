@@ -1,8 +1,8 @@
 import React from "react";
-import "./NavbarLogo.css";
+import "./NavbarLogo.scss";
 
 const NavbarLogo = (props) => {
-  return <h1 className="navbar__logo">DnDGenerate</h1>;
+  return <a href="#" className="navbar__logo">DnDGenerate</a>;
 };
 
 export default NavbarLogo;

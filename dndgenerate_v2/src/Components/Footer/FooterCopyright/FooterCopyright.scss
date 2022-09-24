@@ -1,11 +1,11 @@
-.navbar__links{
+.footer__links{
     display: flex;
     list-style-type: none;
     justify-content: center;
     gap: 10px;
 }
 
-.navbar__links-item{
+.footer__link-item{
     border: 1px solid #333;
     padding: 5px;
     background-color: #333;
@@ -16,4 +16,3 @@
         background-color: #d72323;
     }
 }
-
