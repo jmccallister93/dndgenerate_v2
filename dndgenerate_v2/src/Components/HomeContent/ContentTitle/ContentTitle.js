@@ -1,7 +1,8 @@
 import "./ContentTitle.scss";
 
 const ContentTitle = (props) => {
-  return <p className="contentTitle">Creation Tools For The Modern GM</p>;
+
+  return <p className="content__title">{props.contentTitle}</p>;
 };
 
 export default ContentTitle;

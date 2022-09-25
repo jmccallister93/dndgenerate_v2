@@ -1,7 +1,7 @@
 import "./ContentButton.scss";
 
 const ContentButton = (props) => {
-  return <button className="content-button">Get Started</button>;
+  return <div><button className="content__button">Get Started</button></div>;
 };
 
 export default ContentButton;
