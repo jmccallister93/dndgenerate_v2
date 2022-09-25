@@ -1,23 +1,31 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./NavbarLinks.scss";
 
 const NavbarLinks = (props) => {
+  let navigate = useNavigate();
+  const clickHandlerHome = () => {
+    let path = "/";
+    navigate(path);
+  };
+  const clickHandlerCreate = () => {
+    let path = "/create";
+    navigate(path);
+  };
+  const clickHandlerSignup = () => {
+    let path = "/signup";
+    navigate(path);
+  };
+
   return (
     <ul className="navbar__links">
       <li>
-        <a className="navbar__links-item" href="#">
-          Home
-        </a>
+        <button className="navbar__links-item" onClick={clickHandlerHome}>Home</button>
       </li>
       <li>
-        <a className="navbar__links-item" href="#">
-          Create
-        </a>
+        <button className="navbar__links-item" onClick={clickHandlerCreate}>Create</button>
       </li>
       <li>
-        <a className="navbar__links-item" href="#">
-          Signup
-        </a>
+        <button className="navbar__links-item" onClick={clickHandlerSignup}>Signup</button>
       </li>
     </ul>
   );
