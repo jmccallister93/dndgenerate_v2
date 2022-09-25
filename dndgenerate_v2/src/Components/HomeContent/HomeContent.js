@@ -8,6 +8,7 @@ const HomeContent = (props) => {
     const homeTitle = "Tools for the Modern GM"
     const aboutTitle = "About DnDGenerate"
 
+
   return (
     <>
       <div className="homecontent__wrapper">
