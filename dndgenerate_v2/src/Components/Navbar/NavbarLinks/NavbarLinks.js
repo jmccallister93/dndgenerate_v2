@@ -8,7 +8,7 @@ const NavbarLinks = (props) => {
     navigate(path);
   };
   const clickHandlerCreate = () => {
-    let path = "/create";
+    let path = "/tools";
     navigate(path);
   };
   const clickHandlerSignup = () => {

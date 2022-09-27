@@ -5,15 +5,25 @@ import "./ToolsCard.scss";
 
 const ToolsCard = (props) => {
   let navigate = useNavigate();
-    const clickHandler = () => {
-        let path = "/monster";
-        navigate(path)
-    }
+  const monsterClickHandler = () => {
+    let path = "/monster";
+    navigate(path);
+  };
+
+  const npcClickHandler = () => {
+    let path = '/npc'
+    navigate(path)
+  }
 
   return (
-    <CardWrapper onClick={clickHandler}>
-      <ToolsImage/>
-    </CardWrapper>
+    <>
+      <CardWrapper onClick={monsterClickHandler}>
+        <ToolsImage />
+      </CardWrapper>
+      <CardWrapper onClick={npcClickHandler}>
+        <ToolsImage />
+      </CardWrapper>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import ContentText from "../HomeContent/ContentText/ContentText";
 import ContentTitle from "../HomeContent/ContentTitle/ContentTitle";
 import HomeContentWrapper from "../HomeContent/HomeContentWrapper/HomeContentWrapper";
 import ToolsCard from "./ToolsCard/ToolsCard";
+import ToolsCardWrapper from "./ToolsWrapper/ToolsCardWrapper";
 import ToolsWrapper from "./ToolsWrapper/ToolsWrapper";
 
 const Tools = (props) => {
@@ -12,7 +13,9 @@ const Tools = (props) => {
     <>
       <ToolsWrapper>
         <ContentTitle contentTitle={ToolsTitle} />
-        <ToolsCard />
+        <ToolsCardWrapper>
+          <ToolsCard />
+        </ToolsCardWrapper>
       </ToolsWrapper>
       <HomeContentWrapper>
         <ContentTitle contentTitle={aboutToolsTitle} />
