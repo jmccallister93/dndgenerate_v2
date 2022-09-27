@@ -2,6 +2,8 @@ import ContentButton from "../HomeContent/ContentButton/ContentButton";
 import ContentText from "../HomeContent/ContentText/ContentText";
 import ContentTitle from "../HomeContent/ContentTitle/ContentTitle";
 import "./Create.scss";
+import CreateCard from "./CreateCard/CreateCard";
+
 
 const Create = (props) => {
     const createTitle = "Select a Tool"
@@ -11,7 +13,7 @@ const Create = (props) => {
     <>
        <div className="homecontent__wrapper">
         <ContentTitle contentTitle={createTitle}/>
-        <ContentButton />
+        <CreateCard/>
       </div>
       <div className="homecontent__wrapper">
         <ContentTitle contentTitle={aboutCreateTitle}/>

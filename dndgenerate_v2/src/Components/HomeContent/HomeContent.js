@@ -1,24 +1,23 @@
 import React from "react";
-import "./HomeContent.scss";
 import ContentTitle from "./ContentTitle/ContentTitle";
 import ContentButton from "./ContentButton/ContentButton";
 import ContentText from "./ContentText/ContentText";
+import HomeContentWrapper from "./HomeContentWrapper/HomeContentWrapper";
 
 const HomeContent = (props) => {
-    const homeTitle = "Tools for the Modern GM"
-    const aboutTitle = "About DnDGenerate"
-
+  const homeTitle = "Tools for the Modern GM";
+  const aboutTitle = "About DnDGenerate";
 
   return (
     <>
-      <div className="homecontent__wrapper">
-        <ContentTitle contentTitle={homeTitle}/>
+      <HomeContentWrapper>
+        <ContentTitle contentTitle={homeTitle} />
         <ContentButton />
-      </div>
-      <div className="homecontent__wrapper">
-        <ContentTitle contentTitle={aboutTitle}/>
+      </HomeContentWrapper>
+      <HomeContentWrapper>
+        <ContentTitle contentTitle={aboutTitle} />
         <ContentText />
-      </div>
+      </HomeContentWrapper>
     </>
   );
 };

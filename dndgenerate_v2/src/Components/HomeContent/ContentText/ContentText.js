@@ -1,4 +1,5 @@
 import "./ContentText.scss";
+import { useState } from "react";
 
 const ContentText = (props) => {
   const homeContentText = 

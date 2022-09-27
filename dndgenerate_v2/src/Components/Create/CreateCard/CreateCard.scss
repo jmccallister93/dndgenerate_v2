@@ -1,0 +1,32 @@
+.card__wrapper {
+    display: inline-block;
+    flex: 1 0 21%;
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    transition: transform 0.3s;
+    color: white;
+    font-size: 30px;
+    margin: 50px;
+    background-color: rgba(84, 84, 84, 0.8);
+  
+    &:hover {
+      transition: 0.3s;
+      box-shadow: 0 8px 16px 0 #d72323;
+      transform: scale(1.1);
+      background-color: rgba(84, 84, 84, 1);
+    }
+  }
+  
+  .card__container{
+      padding: 2px 16px;
+  }
+  
+  .card__img{
+      width: 300px;
+      height: 400px;
+  }
+  
+  .card__text{
+      padding: 5px;
+      text-shadow: 5px 5px 2px black;
+  }
