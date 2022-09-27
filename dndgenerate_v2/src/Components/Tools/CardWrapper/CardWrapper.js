@@ -1,4 +1,6 @@
-.card__wrapper {
+import styled from 'styled-components'
+
+export default styled.div`
     display: inline-block;
     flex: 1 0 21%;
     box-shadow: 0 4px 8px 0 white;
@@ -16,17 +18,4 @@
       background-color: rgba(84, 84, 84, 1);
     }
   }
-  
-  .card__container{
-      padding: 2px 16px;
-  }
-  
-  .card__img{
-      width: 300px;
-      height: 400px;
-  }
-  
-  .card__text{
-      padding: 5px;
-      text-shadow: 5px 5px 2px black;
-  }
+`

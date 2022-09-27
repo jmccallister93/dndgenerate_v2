@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ContentButton = (props) => {
     let navigate = useNavigate();
     const clickHandler = () => {
-        let path = "/create";
+        let path = "/tools";
         navigate(path)
     }
 
